@@ -93,8 +93,8 @@ section aside .contentAside li span {
 section aside .contentAside li + li {
   margin-top: 2rem;
 }
-section aside .contentAside li:hover img {
-  stroke: #58d473 !important;
+section aside .contentAside li:hover svg {
+  stroke: #58d473;
 }
 section aside .contentAside li:hover a {
   color: #58d473;

@@ -112,8 +112,8 @@ section {
         }
 
         &:hover {
-          img {
-            stroke: #58d473 !important;
+          svg {
+            stroke: #58d473;
           }
 
           a {
@@ -122,6 +122,10 @@ section {
           span {
             background-color: #58d473;
           }
+        }
+
+        .link {
+          dis
         }
 
         a {

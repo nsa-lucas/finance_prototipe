@@ -96,6 +96,8 @@ section {
         justify-content: space-between;
         gap: 1rem;
 
+        padding-left: 2rem;
+
         width: 100%;
 
         span {
@@ -111,21 +113,24 @@ section {
           margin-top: 2rem;
         }
 
+        .link {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+
+          gap: 2rem;
+        }
+
         &:hover {
           svg {
             stroke: #58d473;
           }
-
           a {
             color: #58d473;
           }
           span {
             background-color: #58d473;
           }
-        }
-
-        .link {
-          dis
         }
 
         a {

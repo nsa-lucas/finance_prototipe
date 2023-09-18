@@ -82,6 +82,7 @@ section aside .contentAside li {
   align-items: center;
   justify-content: space-between;
   gap: 1rem;
+  padding-left: 2rem;
   width: 100%;
 }
 section aside .contentAside li span {
@@ -92,6 +93,12 @@ section aside .contentAside li span {
 }
 section aside .contentAside li + li {
   margin-top: 2rem;
+}
+section aside .contentAside li .link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
 }
 section aside .contentAside li:hover svg {
   stroke: #58d473;

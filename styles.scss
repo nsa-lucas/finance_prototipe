@@ -40,11 +40,11 @@ a {
 }
 
 body {
-  background-color: #08090c;
+  background-color: #303135;
 }
 
-section {
-  max-width: 1080px;
+main {
+  max-width: 1440px;
   width: 100%;
   height: 100vh;
 
@@ -53,25 +53,9 @@ section {
 
   margin: 0 auto;
 
-  header {
-    width: 100%;
-    height: 7rem;
-
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-
-    padding: 0 2rem;
-
-    background-color: #191c23;
-
-    h1 {
-      font-size: 1.6rem;
-    }
-  }
-
   aside {
     height: 100%;
+    width: 30rem;
 
     background-color: #191c23;
 
@@ -88,6 +72,18 @@ section {
 
     .contentAside {
       padding-top: 2rem;
+
+      li.active {
+        svg {
+          stroke: #58d473;
+        }
+        a {
+          color: #58d473;
+        }
+        span {
+          background-color: #58d473;
+        }
+      }
 
       li {
         display: flex;
@@ -123,13 +119,16 @@ section {
 
         &:hover {
           svg {
+            transition: 0.2s;
             stroke: #58d473;
           }
           a {
+            transition: 0.2s;
             color: #58d473;
           }
           span {
-            background-color: #58d473;
+            transition: 0.2s;
+            background-color: rgb(88, 212, 115);
           }
         }
 
@@ -137,6 +136,76 @@ section {
           font-size: 1.2rem;
           font-weight: 500;
         }
+      }
+    }
+  }
+
+  section {
+    max-width: 1440px;
+    width: 100%;
+
+    display: flex;
+    flex-direction: column;
+
+    header {
+      width: 100%;
+      height: 7rem;
+
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+
+      padding: 0 2rem;
+
+      background-color: #191c23;
+
+      h1 {
+        font-size: 1.6rem;
+      }
+
+      .searchBox {
+        background-color: #282e36;
+        border: none;
+
+        padding: 1rem;
+
+        color: #fff;
+        font-size: 1rem;
+
+        border-radius: 0.6rem;
+      }
+    }
+    .movement {
+      background-color: #191c23;
+
+      padding: 2rem;
+      max-width: 60rem;
+      width: 100%;
+
+      margin: 2rem;
+
+      border-radius: 0.6rem;
+
+      display: grid;
+      grid-template-columns: repeat(3, 20rem);
+
+      .balance {
+        h2 {
+          font-size: 1.6rem;
+        }
+
+        span {
+          margin-top: 20rem;
+        }
+      }
+
+      .income,
+      .outcome {
+        display: flex;
+        flex-direction: column;
+
+        justify-content: center;
+        align-items: center;
       }
     }
   }

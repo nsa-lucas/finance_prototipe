@@ -39,18 +39,88 @@ a {
 }
 
 body {
-  background-color: #08090c;
+  background-color: #303135;
 }
 
-section {
-  max-width: 1080px;
+main {
+  max-width: 1440px;
   width: 100%;
   height: 100vh;
   display: flex;
   justify-content: center;
   margin: 0 auto;
 }
-section header {
+main aside {
+  height: 100%;
+  width: 30rem;
+  background-color: #191c23;
+  display: flex;
+  flex-direction: column;
+}
+main aside .headerAside {
+  padding: 1.5rem 5rem;
+}
+main aside .headerAside .logo {
+  width: 10rem;
+}
+main aside .contentAside {
+  padding-top: 2rem;
+}
+main aside .contentAside li.active svg {
+  stroke: #58d473;
+}
+main aside .contentAside li.active a {
+  color: #58d473;
+}
+main aside .contentAside li.active span {
+  background-color: #58d473;
+}
+main aside .contentAside li {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  padding-left: 2rem;
+  width: 100%;
+}
+main aside .contentAside li span {
+  width: 5px;
+  height: 2rem;
+  border-radius: 2rem 0 0 2rem;
+  margin-right: 0;
+}
+main aside .contentAside li + li {
+  margin-top: 2rem;
+}
+main aside .contentAside li .link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+}
+main aside .contentAside li:hover svg {
+  transition: 0.2s;
+  stroke: #58d473;
+}
+main aside .contentAside li:hover a {
+  transition: 0.2s;
+  color: #58d473;
+}
+main aside .contentAside li:hover span {
+  transition: 0.2s;
+  background-color: rgb(88, 212, 115);
+}
+main aside .contentAside li a {
+  font-size: 1.2rem;
+  font-weight: 500;
+}
+main section {
+  max-width: 1440px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+main section header {
   width: 100%;
   height: 7rem;
   display: flex;
@@ -59,57 +129,37 @@ section header {
   padding: 0 2rem;
   background-color: #191c23;
 }
-section header h1 {
+main section header h1 {
   font-size: 1.6rem;
 }
-section aside {
-  height: 100%;
+main section header .searchBox {
+  background-color: #282e36;
+  border: none;
+  padding: 1rem;
+  color: #fff;
+  font-size: 1rem;
+  border-radius: 0.6rem;
+}
+main section .movement {
   background-color: #191c23;
+  padding: 2rem;
+  max-width: 60rem;
+  width: 100%;
+  margin: 2rem;
+  border-radius: 0.6rem;
+  display: grid;
+  grid-template-columns: repeat(3, 20rem);
+}
+main section .movement .balance h2 {
+  font-size: 1.6rem;
+}
+main section .movement .balance span {
+  margin-top: 20rem;
+}
+main section .movement .income,
+main section .movement .outcome {
   display: flex;
   flex-direction: column;
-}
-section aside .headerAside {
-  padding: 1.5rem 5rem;
-}
-section aside .headerAside .logo {
-  width: 10rem;
-}
-section aside .contentAside {
-  padding-top: 2rem;
-}
-section aside .contentAside li {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  gap: 1rem;
-  padding-left: 2rem;
-  width: 100%;
-}
-section aside .contentAside li span {
-  width: 5px;
-  height: 2rem;
-  border-radius: 2rem 0 0 2rem;
-  margin-right: 0;
-}
-section aside .contentAside li + li {
-  margin-top: 2rem;
-}
-section aside .contentAside li .link {
-  display: flex;
   justify-content: center;
   align-items: center;
-  gap: 2rem;
-}
-section aside .contentAside li:hover svg {
-  stroke: #58d473;
-}
-section aside .contentAside li:hover a {
-  color: #58d473;
-}
-section aside .contentAside li:hover span {
-  background-color: #58d473;
-}
-section aside .contentAside li a {
-  font-size: 1.2rem;
-  font-weight: 500;
 }/*# sourceMappingURL=styles.css.map */

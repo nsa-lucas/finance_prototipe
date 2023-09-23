@@ -13,7 +13,7 @@
     <title>Finance</title>
   </head>
   <body>
-    <section>
+    <main>
       <aside>
         <div class="headerAside">
           <img class="logo" src="./images/logo.svg" alt="Finance" />
@@ -21,7 +21,7 @@
         <div class="contentAside">
           <div class="optionsAside">
             <ul>
-              <li>
+              <li class="active">
                 <div class="link">
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
@@ -117,12 +117,34 @@
           </div>
         </div>
       </aside>
-      <header>
-        <h1>Dashboard</h1>
 
-        <input type="search" />
-      </header>
-      <main></main>
-    </section>
+      <section>
+        <header>
+          <h1>Dashboard</h1>
+
+          <input type="search" class="searchBox" placeholder="Search..." />
+        </header>
+        <section class="movement">
+          <div class="balance">
+            <h2>Total Balance</h2>
+            <span class="totalValueBalance">R$ 5.000,00</span>
+          </div>
+          <div class="income">
+            <img src="./images/bar-chart-3.svg" alt="" />
+            <div class="incomeContent">
+              <img src="./images/trending-down.svg" alt="" />
+              <span class="totalIncome">R$ 2.300,00</span>
+            </div>
+          </div>
+          <div class="outcome">
+            <img src="./images/bar-chart-red.svg" alt="" />
+            <div class="outcomeContent">
+              <img src="./images/trending-up.svg" alt="" />
+              <span class="totalOutcome">R$ 1.500,00</span>
+            </div>
+          </div>
+        </section>
+      </section>
+    </main>
   </body>
 </html>
